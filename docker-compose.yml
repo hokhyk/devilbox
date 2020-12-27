@@ -51,7 +51,8 @@ services:
       ##
       ## Bind wildcard/host settings
       ##
-      - WILDCARD_DNS=${TLD_SUFFIX:-loc}=127.0.0.1
+      # - WILDCARD_DNS=${TLD_SUFFIX:-loc}=127.0.0.1
+      - WILDCARD_DNS=${TLD_SUFFIX:-loc}=10.1.1.155
       - EXTRA_HOSTS=${EXTRA_HOSTS}
 
       ##
