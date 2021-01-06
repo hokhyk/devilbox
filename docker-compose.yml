@@ -441,6 +441,8 @@ services:
     image: mongo:${MONGO_SERVER}
     hostname: mongo
 
+    # command: mongod --auth
+
     ports:
       # [local-machine:]local-port:docker-port
       - "${LOCAL_LISTEN_ADDR}${HOST_PORT_MONGO}:27017"
